@@ -17,14 +17,14 @@ security:
 # and token store
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/auth
-    username: root
-    password: password
-    driver-class: com.mysql.jdbc.Driver
+    url: jdbc:derby:testdb;create=true
+    username: 
+    password: 
+    driver-class: org.apache.derby.jdbc.EmbeddedDriver
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    show-sql: false
+    database-platform: org.hibernate.dialect.DerbyDialect
+    show-sql: true
     hibernate:
       ddl-auto: create
 
