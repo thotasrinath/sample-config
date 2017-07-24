@@ -63,7 +63,7 @@ spring:
 # and token store
 spring:
   datasource:
-    url: jdbc:derby://localhost:1527/mydb;create=true
+    url: jdbc:derby://localhost:1527/mydb
     username: srinath
     password: srinath
     initialize: false
