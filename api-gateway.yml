@@ -68,7 +68,6 @@ spring:
     password: srinath
     initialize: false
     driver-class-name: org.apache.derby.jdbc.ClientDriver
-
   jpa:
     database-platform: org.hibernate.dialect.DerbyDialect
     show-sql: true
