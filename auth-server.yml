@@ -18,8 +18,8 @@ security:
 spring:
   datasource:
     url: jdbc:derby://localhost:1527/mydb;create=true
-    username: 
-    password: 
+    username: srinath
+    password: srinath
     initialize: false
     driver-class-name: org.apache.derby.jdbc.ClientDriver
 
