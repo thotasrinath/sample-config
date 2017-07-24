@@ -20,7 +20,7 @@ spring:
     url: jdbc:derby://localhost:1527/mydb;create=true
     username: srinath
     password: srinath
-    initialize: false
+    initialize: true
     driver-class-name: org.apache.derby.jdbc.ClientDriver
 
   jpa:
