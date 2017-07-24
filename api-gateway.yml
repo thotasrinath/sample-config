@@ -57,14 +57,17 @@ spring:
     resource:
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
       preferTokenInfo: false
-
-# Datasource and JPA configuration to be used for using the same tokenstore as the authorization server for
-# the defined resource server. Note that there can't be 2 different root nodes, so datasource falls under the "spring" node.
+      
+      
+# Datasource and JPA configuration to be used for storing the OAuth authorization details
+# and token store
+spring:
   datasource:
     url: jdbc:derby://localhost:1527/mydb;create=true
-    username: 
-    password: 
-    driver-class: org.apache.derby.jdbc.ClientDriver
+    username: srinath
+    password: srinath
+    initialize: false
+    driver-class-name: org.apache.derby.jdbc.ClientDriver
 
   jpa:
     database-platform: org.hibernate.dialect.DerbyDialect
