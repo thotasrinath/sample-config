@@ -17,7 +17,7 @@ security:
 # and token store
 spring:
   datasource:
-    url: jdbc:derby:auth2;create=true
+    url: jdbc:derby:auth3;create=true
     username: 
     password: 
     driver-class: org.apache.derby.jdbc.EmbeddedDriver
