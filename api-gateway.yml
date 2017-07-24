@@ -63,16 +63,17 @@ spring:
 # and token store
 spring:
   datasource:
-    url: jdbc:derby://localhost:1527/mydb
+    url: jdbc:derby://localhost:1527/mydb;create=true
     username: srinath
     password: srinath
-    initialize: false
+    initialize: true
     driver-class-name: org.apache.derby.jdbc.ClientDriver
+
   jpa:
     database-platform: org.hibernate.dialect.DerbyDialect
     show-sql: true
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create-drop
 
 ---
 # Auth-server instance when used on Docker
