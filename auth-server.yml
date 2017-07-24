@@ -17,10 +17,10 @@ security:
 # and token store
 spring:
   datasource:
-    url: jdbc:derby:auth4;create=true
+    url: jdbc:derby://localhost:1527/mydb;create=true
     username: 
     password: 
-    driver-class: org.apache.derby.jdbc.EmbeddedDriver
+    driver-class: org.apache.derby.jdbc.ClientDriver
 
   jpa:
     database-platform: org.hibernate.dialect.DerbyDialect
