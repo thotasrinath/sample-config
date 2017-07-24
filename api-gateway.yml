@@ -61,7 +61,7 @@ spring:
 # Datasource and JPA configuration to be used for using the same tokenstore as the authorization server for
 # the defined resource server. Note that there can't be 2 different root nodes, so datasource falls under the "spring" node.
   datasource:
-    url: jdbc:derby:auth2;create=true
+    url: jdbc:derby:auth3;create=true
     username: 
     password: 
     driver-class: org.apache.derby.jdbc.EmbeddedDriver
